@@ -2,31 +2,39 @@ $font_stack_1: 'Rubik', sans-serif;
 $font_stack_2: 'Poppins', sans-serif;
 /*Color Variables*/
 
-$primary-color  : #B08EAD;
+// :root {
+//     --primary-color: #62a6ba;   /* Secondary color */
+//     --secondary-color: #201464;     /* Primary color */
+//     --tertiary-color: #a7acc6;    /* Tertiary color */
+//     --background-color: #fefefe;  /* Background color */
+//     --accent-color: #d4d7e6;      /* Accent color */
+// }
+
+$primary-color  : #62a6ba;
+$secondary-color : #201464; 
 $title-color    : #2a2a2a;
-$text-color     : #e709d4;
+$text-color     : #201464;
 $offwhite       : #f6f6f6;
 $white: #fff;
-$section_bg: #f4f4f4;
+$section_bg: #e1e5f8;
 $white_color: #fff;
 $black_color: #000;
 $menu_color: #000;
 $icon_color: #0c2e60;
 $icon_bg: #f0f4f6;
 $author_text_color: #556172;
-$section_bg: #f4f4f4;
 $color_1: #f8fbff;
 $color_2: #fffbf9;
 $color_3: #fafafa;
 $color_4: #fffcf4;
-$btn_bg: #B08EAD;
-$primary_color: #B08EAD;
+$btn_bg: $primary-color;
+$primary_color: $primary-color;
 $btn_hover: #f5790b;
 $section_bg_1: #e8f0f2;
-$heading_color: #4B3049;
+$heading_color: #201464;
 $heading_color2: #ff8b23;
 $font_1: #666666;
-$font_2: #222222;
+$font_2: #201464;
 $font_3: #7f7f7f;
 $font_4: #8a8a8a;
 $font_5: #999999;

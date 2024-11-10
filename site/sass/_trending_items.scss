@@ -1,5 +1,5 @@
 .trending_items{
-    background-color: #F4EDF2;
+    background-color: $section_bg;
     padding: 200px 0 130px;
     @media #{$tab}{
         padding: 70px 0 40px;

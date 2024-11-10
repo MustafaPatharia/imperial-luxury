@@ -40,7 +40,7 @@
 					padding: 0 7px;
 				}
 				&:hover{
-					color: #E4D3DF;
+					color: $secondary-color;
 				}
 			}
 		}
@@ -67,7 +67,7 @@
 	}
 	
 	.copyright_part{
-		background-color: #F4EDF2;
+		background-color: $primary-color;
 		padding: 30px 0px;
 		.copyright_text{
 			display: flex;
