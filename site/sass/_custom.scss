@@ -1,11 +1,43 @@
 .navbar{
     img{
-        max-height: 54px;
+        max-height: 38px;
     }
 }
 
 .footer_logo{
     img{
         height: 36px;
+    }
+}
+
+.banners, .product_img_slide{
+    .owl-nav{
+        display: flex;
+        justify-content: space-between;
+        top: 38%;
+        position: absolute;
+        width: 100%;
+        padding: 0 20px;
+        button.owl-prev, button.owl-next{
+            // padding: 15px 18px !important;
+            width: 55px;
+            height: 55px;
+            background: #ffffff66 !important;
+            backdrop-filter: blur(12px) !important;
+            border-radius: 50% !important;
+            i, span{
+                font-size: 20px;
+            }
+            &:hover{
+                background: rgb(255 255 255 / 75%) !important;
+            }
+        }
+    }
+}
+
+.product_img_slide{
+    .single_product_img{
+        width: 600px;
+        margin: auto;
     }
 }

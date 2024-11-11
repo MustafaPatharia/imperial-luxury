@@ -112,11 +112,12 @@
 
 .menu_fixed {
 	position: fixed;
-	z-index: 9999 !important;
-	width: 100%;
-	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
-	top: 0;
-	background-color: $white_color;
+    z-index: 9999 !important;
+    width: 100%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    top: 0;
+    background-color: #ffffff8a;
+    backdrop-filter: blur(20px);
 
 	.active_color {
 		color: $btn_bg !important;

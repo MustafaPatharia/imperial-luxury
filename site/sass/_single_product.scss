@@ -1,5 +1,5 @@
 .single_product_list{
-    padding: 200px 0 100px;
+    padding: 100px 0 100px;
     @media #{$tab}{
         padding: 100px 0 0;
     }
@@ -109,32 +109,49 @@
         margin-top: -150px !important;
     }
     .owl-nav{
+        display: flex;
+        justify-content: space-between;
+        top: 38%;
+        position: absolute;
+        width: 100%;
+        padding: 0 20px;
         button.owl-prev, button.owl-next{
-            width: 40px;
-            height: 40px;
-            font-size: 14px;
-            line-height: 40px;
-            border-radius: 50%;
-            border: 1px solid #E4D3DF;
-            color: $white;
-            background-color: #E4D3DF;
-            position: absolute;
-            left: 30px;
-            top: 54%;
-            @include transform_time(.5s);
+            padding: 15px 18px !important;
+            background: #ffffff66 !important;
+            backdrop-filter: blur(12px) !important;
+            border-radius: 50% !important;
             &:hover{
-                background-color: $text-color;
-                color: $white;
+                background: rgb(255 255 255 / 75%) !important;
             }
         }
-        button.owl-next{
-            text-indent: 2px;
-            left: auto;
-            right: 30px
-        }
     }
+    // .owl-nav{
+    //     button.owl-prev, button.owl-next{
+    //         width: 40px;
+    //         height: 40px;
+    //         font-size: 14px;
+    //         line-height: 40px;
+    //         border-radius: 50%;
+    //         border: 1px solid #E4D3DF;
+    //         color: $white;
+    //         background-color: #E4D3DF;
+    //         position: absolute;
+    //         left: 30px;
+    //         top: 54%;
+    //         @include transform_time(.5s);
+    //         &:hover{
+    //             background-color: $text-color;
+    //             color: $white;
+    //         }
+    //     }
+    //     button.owl-next{
+    //         text-indent: 2px;
+    //         left: auto;
+    //         right: 30px
+    //     }
+    // }
     .single_product_text{
-        margin: 100px 0 200px;
+        margin: 10px 0 200px;
         @media #{$tab}{
             margin: 40px 0 70px;
         }

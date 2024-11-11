@@ -1,9 +1,9 @@
 /**************** banner part css start ****************/
 .banner_part{
     position: relative;
-    height: 782px;
+    // height: 782px;
     display: flex;
-    align-items: center;
+    overflow: hidden;
     @media #{$tab}{
         height: 550px;
      }
@@ -16,25 +16,37 @@
      @media #{$big_screen}{
          height: 600px;
      }
-    &:after{
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
-        background-color: $primary-color;
-        width: 196px;
-        height: 618px;
-        @media #{$tab}{
-            display: none;
-        }
-        @media #{$medium_device}{
-            display: none;
-        }
-        @media #{$big_screen}{
-            display: none;
-        }
+    // &:after{
+    //     position: absolute;
+    //     content: "";
+    //     left: 0;
+    //     bottom: 0;
+    //     background-color: $primary-color;
+    //     width: 196px;
+    //     height: 618px;
+    //     @media #{$tab}{
+    //         display: none;
+    //     }
+    //     @media #{$medium_device}{
+    //         display: none;
+    //     }
+    //     @media #{$big_screen}{
+    //         display: none;
+    //     }
+    // }
+    .banners{
+        width: 100%;
     }
     .banner_text{
+        position: absolute;
+        top: 0;
+        background: #ffffff9e;
+        backdrop-filter: blur(25px);    
+        padding: 40px;
+        max-width: 300px;
+        transform: translate(30%, 30%);
+        max-width: 500px;
+        
         @media #{$tab}{
             margin-top: -150px;
         }
@@ -43,7 +55,7 @@
         }
         
         h1{
-            font-size: 68px;
+            font-size: 50px;
             font-weight: 500;
             line-height: 78px;
             margin-bottom: 10px;
@@ -72,22 +84,22 @@
             }
         }
         p{
-            font-size: 20px;
+            font-size: 16px;
             line-height: 1.5;
         }
     }
-    .banner_img{
-        position: absolute;
-        right: 0;
-        top: 0;
-        max-width: 55%;
+    .banner_img_container{
+        // position: absolute;
+        // right: 0;
+        // top: 0;
+        height: 100%;
+        max-width: 100%;
+        width: 100%;
         @media #{$big_screen}{
-            max-width: 55%; 
-            top: auto;
+            top: 0;
             bottom: 0;
         }
         @media #{$medium_device}{
-            max-width: 55%; 
             top: auto;
             bottom: 0;
         }
@@ -97,31 +109,35 @@
             bottom: 0;
         }
         @media #{$large_mobile}{
-            max-width: 55%; 
             top: auto;
             bottom: 0;
         }
         @media #{$tab_device}{
-            max-width: 55%; 
             top: auto;
             bottom: 0;
         }
-        .pattern_img{
-            position: absolute;
-            left: -133px;
-            bottom: 0;
-            @media #{$medium_device}{
-                max-width: 75%; 
-            }
-            @media #{$small_mobile}{
-                max-width: 60%; 
-            }
-            @media #{$large_mobile}{
-                max-width: 55%; 
-            }
-            @media #{$tab_device}{
-                max-width: 55%; 
-            }
+        .banner_img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .pattern_img{
+        position: absolute;
+        right: -26%;
+        bottom: -62px;
+      
+        @media #{$medium_device}{
+            max-width: 75%; 
+        }
+        @media #{$small_mobile}{
+            max-width: 60%; 
+        }
+        @media #{$large_mobile}{
+            max-width: 55%; 
+        }
+        @media #{$tab_device}{
+            max-width: 55%; 
         }
     }
     .btn_1{
