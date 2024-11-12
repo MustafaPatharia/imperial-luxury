@@ -32,7 +32,7 @@ input:focus {
 }
 
 .section_padding {
-  padding: 200px 0px;
+  padding: 100px 0px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .section_padding {
@@ -2273,6 +2273,8 @@ input:focus {
 .single_product_item .single_product_item_thumb {
   background-color: #fff;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
   text-align: center;
 }
 .single_product_item h3 {
@@ -6563,6 +6565,18 @@ h6 {
   padding: 200px 40px;
   min-height: 400px;
   font-size: 80px;
+}
+
+.client_initials {
+  width: 100px;
+  background-color: #cbddea;
+  height: 100px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 34px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

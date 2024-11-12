@@ -16,45 +16,53 @@
 
   // Function to load and display reviews
   function loadReviews() {
-      $.getJSON('/data/testimonials.json', function(data) {
-          data.forEach(testimonial => {
+      $.getJSON('/data/reviews.json', function(data) {
+          data.forEach(client => {
+              // Split the name to get initials
+              const nameParts = client.name.split(' ');
+              const initials = nameParts[0][0].toUpperCase() + (nameParts[1] ? nameParts[1][0].toUpperCase() : '');
+              
+              // Create HTML structure for the review
               const reviewHtml = `
                   <div class="single_client_review">
                       <div class="client_img">
-                          <img src="/img/clients/${testimonial.image}" alt="Client Image">
+                          <img src="/img/clients/${client.image}" alt="Client Image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                          <div class="client_initials" style="display: none;">${initials}</div>
                       </div>
-                      <p>"${testimonial.review}"</p>
-                      <h5>- ${testimonial.name}</h5>
+                      <p>"${client.review}"</p>
+                      <h5>- ${client.name}</h5>
                   </div>
               `;
+      
+              // Append the review to the container
               reviewContainer.append(reviewHtml);
-          });
+       });
 
-          var review = $('.client_review_slider');
-          if (review.length) {
-            review.owlCarousel({
-              items: 1,
-              loop: true,
-              dots: true,
-              autoplay: true,
-              autoplayHoverPause: true,
-              autoplayTimeout: 5000,
-              nav: true,
-              dots: false,
-              navText: [" <i class='ti-angle-left'></i> ", "<i class='ti-angle-right'></i> "],
-              responsive: {
-                0: {
-                  nav: false
-                },
-                768: {
-                  nav: false
-                },
-                991: {
-                  nav: true
-                }
+        var review = $('.client_review_slider');
+        if (review.length) {
+          review.owlCarousel({
+            items: 1,
+            loop: true,
+            dots: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 5000,
+            nav: true,
+            dots: false,
+            navText: [" <i class='ti-angle-left'></i> ", "<i class='ti-angle-right'></i> "],
+            responsive: {
+              0: {
+                nav: false
+              },
+              768: {
+                nav: false
+              },
+              991: {
+                nav: true
               }
-            });
-          }
+            }
+          });
+        }
       }).fail(function() {
           console.error('Could not load testimonials.');
       });

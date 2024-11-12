@@ -1,0 +1,27 @@
+[
+    {
+        "name": "John Doe",
+        "image": "client_1.jpg",
+        "review": "Amazing product! Quality exceeded my expectations. Highly recommend to anyone looking for a reliable solution."
+    },
+    {
+        "name": "Jane Smith",
+        "image": "client_2.jpg",
+        "review": "Excellent service and great product. It was exactly what I was looking for!"
+    },
+    {
+        "name": "Alex Brown",
+        "image": "client_2.jpg",
+        "review": "Very satisfied with the purchase. Customer support was also very helpful and responsive."
+    },
+    {
+        "name": "Emily Johnson",
+        "image": "client_3.jpg",
+        "review": "The product quality is fantastic and the delivery was prompt. Would definitely buy again!"
+    },
+    {
+        "name": "Michael Lee",
+        "image": "client_4.jpg",
+        "review": "I was skeptical at first, but the product exceeded my expectations. Great value for the price."
+    }
+]

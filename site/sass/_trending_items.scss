@@ -20,6 +20,8 @@
     .single_product_item_thumb{
         background-color: $white;
         margin: 0 auto;
+        overflow: hidden;
+        border-radius: 8px;
         text-align: center;
     }
     h3{

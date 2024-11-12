@@ -12,4 +12,8 @@ const pages = [
         path: '/about',
         htmlPath: '/pages/about.html',
     },
+    {
+        path: '/contact',
+        htmlPath: '/pages/contact.html',
+    },
 ];

@@ -18,7 +18,7 @@ input:focus {
     background-color: $section_bg;
 }
 .section_padding {
-    padding: 200px 0px;
+    padding: 100px 0px;
 
     @media #{$medium_device} {
         padding: 100px 0px;
