@@ -22,7 +22,7 @@
 
                 // Loop through each image and construct the image path
                 product['Product Images'].forEach(imageName => {
-                    const imgPath = `/img/product/${product["Product Name"]}/${imageName}`;
+                    const imgPath = `/img/product/${product["Category"]}/${product["Product Name"]}/${imageName}`;
                     const imageHTML = `
                         <div class="single_product_img">
                             <img src="${imgPath}" alt="${product["Product Name"]}" class="img-fluid">
@@ -63,7 +63,7 @@
                 const specificationsTableBody = $('.specification-table tbody');
                 specificationsTableBody.empty();
 
-                $.each(product.specifications, function(key, value) {
+                $.each(product['Specifications'], function(key, value) {
                     const rowHTML = `
                         <tr>
                             <td>${key}</td>

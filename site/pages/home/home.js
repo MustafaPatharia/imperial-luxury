@@ -51,9 +51,7 @@
                       <div class="col-lg-4 col-sm-6">
                           <div class="single_product_item">
                               <div class="single_product_item_thumb">
-                                  <img src="/img/${
-                                    product["Product Header"]
-                                  }" alt="#" class="img-fluid">
+                                  <img src="/img/product/${product["Category"]}/${product["Product Name"]}/${product["Product Header"]}" alt="#" class="img-fluid">
                               </div>
                               <h3 class="text-center"><a href="${
                                 product["Product URL"]
