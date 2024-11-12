@@ -16,7 +16,7 @@ $(document).ready(function() {
         if (page) {
             // Match dynamic segment (e.g., /category/:id, /product/:id)
             const dynamicSegmentMatch = pagePath.match(new RegExp(page.path.replace(/:\w+/g, '([\\w-]+)')));
-            
+
             // Extract dynamic segments (if any) and process them (e.g., ID, category, etc.)
             let dynamicParams = {};
             if (dynamicSegmentMatch) {
@@ -42,10 +42,10 @@ $(document).ready(function() {
             })
             .fail(function() {
                 console.error('Error loading the page:', htmlPath);
-                contentDiv.html('<h1>404 Not Found</h1>');
+                contentDiv.html('<p class="page_not_found">404<br>Not Found</p>');
             });
         } else {
-            contentDiv.html('<h1>404 Not Found</h1>');
+            contentDiv.html('<p class="page_not_found">404 Not Found</p>');
         }
     }
 

@@ -10,6 +10,6 @@ const pages = [
     },
     {
         path: '/about',
-        htmlPath: 'about.html',
+        htmlPath: '/pages/about.html',
     },
 ];

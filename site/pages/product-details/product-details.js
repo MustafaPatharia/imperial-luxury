@@ -5,8 +5,8 @@
     function getProductDetailsFromURL() {
         const currentPath = window.location.pathname; // Get the current URL path
 
-        // Fetch data from data.json
-        $.getJSON('/data.json', function(data) {
+        // Fetch data from products.json
+        $.getJSON('/data/products.json', function(data) {
             // Find the product that matches the current URL
             const product = data.find(p => p["Product URL"] === currentPath);
 
@@ -61,7 +61,7 @@
 
                 // Append specifications to the table
                 const specificationsTableBody = $('.specification-table tbody');
-                specificationsTableBody.empty(); 
+                specificationsTableBody.empty();
 
                 $.each(product.specifications, function(key, value) {
                     const rowHTML = `
@@ -77,7 +77,7 @@
                 console.error('Product not found');
             }
         }).fail(function() {
-            console.error('Failed to load data.json');
+            console.error('Failed to load products.json');
         });
     }
 

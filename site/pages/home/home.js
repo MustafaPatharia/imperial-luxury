@@ -33,7 +33,7 @@
         }
       });
     }
-  
+
 
   function displayTrendingItems() {
     const container = document.getElementById("trending-items-container");
@@ -41,7 +41,7 @@
     // Clear any existing items
     container.innerHTML = "";
 
-    fetch("data.json")
+    fetch("data/products.json")
       .then((response) => response.json())
       .then((products) => {
         // Loop through products and display only those that are trending
